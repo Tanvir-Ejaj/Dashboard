@@ -1,0 +1,262 @@
+/* 
+Project Name: Dashboard
+version: 1.0.0
+Aurthor: Md Tanvir Ejaj Tushar
+
+*/
+
+/* Common CSS Area start */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+  margin-bottom: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #ffffff;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Common CSS Area end */
+
+:root {
+  --primary-color: #04103b;
+  --secondary-color: #5041bc;
+  --third-color: #ffffff;
+  --fourth-color: #ff8057;
+  --regular-font-weight: 400;
+  --medium-font-weight: 500;
+  --semi-bold-font-weight: 600;
+  --bold-font-weight: 700;
+}
+
+/* Sidenav area start */
+
+.sidenav-main {
+  width: 15%;
+  background: #5041bc;
+  height: 100vh;
+  z-index: 99;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-logo {
+  padding-bottom: 40px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-logo::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+}
+
+.nav-links-main {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.links-inner {
+  margin-bottom: 20px;
+}
+
+.links-inner a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: var(--semi-bold-font-weight);
+  padding: 10px 28px;
+  background: transparent;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.links-inner a i {
+  width: 20%;
+  margin-right: 40px;
+}
+
+.links-inner a:hover {
+  background: #ffffff;
+  color: #5041bc;
+  font-weight: 800;
+}
+
+.nav-banner {
+  text-align: center;
+  margin-top: 50px;
+  background: var(--third-color);
+  padding: 50px 20px 25px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.nav-banner img {
+  width: 60%;
+}
+
+.nav-banner h3 {
+  font-size: 14px;
+  color: #263156;
+  font-weight: var(--bold-font-weight);
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+
+.nav-banner button {
+  font-size: 14px;
+  color: var(--third-color);
+  font-weight: var(--bold-font-weight);
+  text-align: center;
+  border: 0;
+  padding: 11px 26px;
+  background: var(--fourth-color);
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -o-border-radius: 23px;
+}
+
+/* Sidenav area end */
+
+/* Dash Heading area start */
+
+.heading h3 {
+  font-size: 32px;
+  color: var(--primary-color);
+  font-weight: var(--bold-font-weight);
+}
+
+.dash-main {
+  width: 85%;
+  padding: 35px 0;
+}
+
+.heading-input {
+  width: 65%;
+  padding: 12px 21px;
+  background: rgba(245, 243, 255, 1);
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -o-border-radius: 23px;
+}
+
+.heading-input input{
+  outline: 0;
+  border: 0;
+  background: transparent;
+  color: var(--secondary-color);
+  width: 90%;
+}
+
+.heading-input::placeholder{
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-weight: var(--medium-font-weight);
+}
+
+.heading-input i{
+  color: var(--secondary-color);
+}
+
+.notification{
+  width: 5%;
+  color: var(--secondary-color);
+}
+
+.notification i{
+  position: relative;
+  z-index: -1;
+  font-size: 20px;
+}
+
+.notification i::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 1px;
+  height: 6px;
+  width: 6px;
+  background-color: red;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  z-index: 1;
+}
+
+.profiles{
+  width: 20%;
+}
+
+.profiles h6{
+  color: #54657E;
+  font-size: 13px;
+  font-weight: var(--regular-font-weight);
+}
+
+.profiles i{
+  color: var(--secondary-color);
+}
+
+.small-heading h2{
+  font-size: 16px;
+  font-weight: var(--bold-font-weight);
+  color: #04103B;
+}
